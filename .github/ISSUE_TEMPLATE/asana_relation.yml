@@ -1,0 +1,11 @@
+name: [A] Asanaから記載 
+description: Asanaに記載したものを転記するためのもの
+title: "ID-XXX: "
+labels: []
+body:
+  - type: textarea
+    id: asana
+    attributes:
+      label: Asana URL
+      description: Asana URLを記載
+

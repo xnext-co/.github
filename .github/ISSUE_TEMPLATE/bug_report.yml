@@ -1,0 +1,40 @@
+name: 🐛 バグ報告
+description: バグ用のIssueテンプレート
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 不具合の概要
+      description: 起きた事象を具体的に記載する
+      placeholder: 送信ボタンをクリックしたら 500 エラーが返ってきた
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待した挙動
+      description: 本来どうなるべきだったか
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 再現手順
+      description: 最小の再現手順を記載
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: ログ / スクリーンショット
+      description: 関連するログやスクショを貼り付け(コードブロック推奨)
+      render: shell
